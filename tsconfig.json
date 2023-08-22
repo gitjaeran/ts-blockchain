@@ -25,6 +25,6 @@
     */
     "lib": ["ES6", "DOM"],
     "strict": true,
-    "allowJs": true
+    "allowJs": true //ts 안에 js를 허용한다는 의미
   }
 }
