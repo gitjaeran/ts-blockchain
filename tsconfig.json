@@ -10,7 +10,10 @@
   //outDir : 자바스크립트 파일이 생성될 디렉터리 지정
   "compilerOptions": {
     "outDir": "build",
+    /*esModuleInterop : import시 타입정의파일 관련*/
     "esModuleInterop": true,
+    /*module : 만일 브라우저 앱을 만들고 있다면 "UMD" 사용*/
+    "module": "CommonJS",
     "target": "ES6",
     /*lib : 합쳐진 라이브러리의 "정의 파일"을 특정해주는 역할
     = 정의 파일이 목표로 하는 런타임 환경을 알려줌
@@ -23,8 +26,8 @@
 
     =>> 타겟 런타임 환경이 뭔지 알려주는 역할.
     */
-    "lib": ["ES6", "DOM"],
-    "strict": true,
-    "allowJs": true //ts 안에 js를 허용한다는 의미
+    "lib": ["ES6"],
+    "strict": true
+    // "allowJs": true //ts 안에 js를 허용한다는 의미
   }
 }
